@@ -1,0 +1,149 @@
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 15px 0px 15px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.content-card {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 400px;
+    width: 100%;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.flex-container > .content-card > .img-container {
+    position: relative;
+}
+
+
+.flex-container > .content-card  .img-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.flex-container > .content-card > .img-container .view-eye-icon:hover {
+    opacity: 1;
+}
+
+.flex-container > .content-card  .img-container > .view-eye-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    display: grid;
+    place-items: center;
+    background-color: #15efeb94;
+    border-radius: 15px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.flex-container > .content-card > .img-container > .view-eye-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.flex-container > .content-card .text-container h1 a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.flex-container > .content-card .text-container h1:hover a {
+    color: hsl(178, 100%, 50%);
+}
+
+.flex-container > .content-card .text-container p {
+    color: #8199bb;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.flex-container > .content-card .text-container .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  #8199bb;
+}
+
+.flex-container > .content-card .text-container .price-container h2, .flex-container > .content-card .text-container .price-container h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > .content-card .text-container .price-container h2 {
+    color: hsl(178, 100%, 50%);
+} 
+
+.flex-container > .content-card .text-container .price-container h3 {
+    color: #8199bb;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.flex-container > .content-card .text-container .price-container h2 span, .flex-container > .content-card .text-container .price-container h3 span {
+    margin-left: 5px;
+}
+
+.flex-container .profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flex-container .author-img > img {
+    border: 1px solid #8199bb;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.flex-container .profile-container .author-name {
+    margin-left: 10px;
+}
+
+.author-name h4 {
+    color: #8199bb;
+    font-weight: 400;
+}
+
+.author-name h4 span {
+    color: white;
+    font-weight: 500;
+}
+
+.author-name h4 span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a { color: white; }
